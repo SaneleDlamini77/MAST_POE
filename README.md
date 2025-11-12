@@ -1,6 +1,6 @@
 A React Native mobile application for managing and browsing restaurant menus with course-based filtering and dish management capabilities.
 
-📱 App Overview
+App Overview
 This application provides a complete solution for restaurant menu management, allowing users to:
 
 View menu items organized by courses (Starters, Mains, Desserts)
@@ -11,7 +11,7 @@ Filter menu items by course type
 
 Browse the complete menu selection
 
-🏗️ Project Structure
+Project Structure
 text
 src/
 ├── Navigation/
@@ -24,7 +24,7 @@ src/
     ├── FilterScreen.tsx         # Filter by course
     ├── MenuSelectionScreen.tsx  # Full menu view
     └── FinalMenuScreen.tsx      # Final menu display
-🎯 Features
+Features
 Home Screen
 Restaurant branding and establishment info
 
@@ -68,7 +68,7 @@ Simple list view of all menu items
 
 Comprehensive dish information display
 
-🛠️ Technical Details
+Technical Details
 Dependencies
 React Native
 
@@ -100,7 +100,7 @@ MenuSelection → Full menu view
 
 FinalMenu → Complete menu display
 
-🎨 UI/UX Features
+UI/UX Features
 Clean Design: Modern, card-based interface with subtle shadows
 
 Color Scheme:
@@ -115,7 +115,7 @@ Responsive Layout: Adapts to different screen sizes
 
 Intuitive Navigation: Clear button hierarchy and flow
 
-📊 Sample Data
+Sample Data
 The app comes pre-loaded with sample menu items including:
 
 Starters
@@ -130,7 +130,7 @@ Desserts
 
 Chocolate Lava Cake, Tiramisu, Cheesecake
 
-🚀 Getting Started
+Getting Started
 Prerequisites
 
 Node.js and npm/yarn
@@ -151,7 +151,7 @@ bash
 npx react-native run-ios
 # or
 npx react-native run-android
-🔧 Customization
+Customization
 Adding New Courses
 Update the Course type in MenuItem.ts
 
@@ -173,7 +173,7 @@ Simple array operations for adding new items
 
 Filtering based on course types
 
-📱 Screens
+Screens
 Home: Dashboard with overview and quick actions
 
 Add Menu Item: Form for creating new dishes
@@ -184,7 +184,7 @@ Menu Selection: Organized full menu view
 
 Final Menu: Simple list of all menu items
 
-🔄 Data Flow
+Data Flow
 Menu items are managed in HomeScreen state
 
 Passed between screens via React Navigation params
@@ -193,7 +193,7 @@ AddMenuItemScreen uses callback to update parent state
 
 Filtering happens locally in each screen
 
-🎯 Potential Enhancements
+Potential Enhancements
 Persistent storage integration
 
 Edit/delete menu item functionality
@@ -207,6 +207,35 @@ Menu categories expansion
 User authentication
 
 Backend API integration
+
+Changelog
+Changes Implemented Since Part 2
+Moved menu item adding/removal to a dedicated screen for chefs.
+
+Home screen now displays average price for each course.
+
+Added filter page for guests. Guests can filter menu to see only Starters, Mains, or Desserts.
+
+All menu items are saved in an array and updated in real time.
+
+Removal feature added for both chef and homepage displays.
+
+Refactoring for Final PoE
+Extracted reusable functions (e.g., for computing averages, filtering, and core logic) to a shared utility file (utils.ts).
+
+Split all screens into separate files (HomeScreen.tsx, AddMenuItemScreen.tsx, FilterScreen.tsx, etc).
+
+Applied for, while, and for-in loops in data transformation and UI logic:
+
+for loop: Calculating average prices by course on the home screen.
+
+while loop: Used for bulk removal operations (if multiple items are selected for deletion).
+
+for-in loop: Listing out properties for a menu item object.
+
+Defined global variables (app state/context) for courses and menu items, shared across screens.
+
+Improved code organization and readability by separating components, hooks, and helpers.
 
 References
 
