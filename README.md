@@ -237,6 +237,9 @@ Defined global variables (app state/context) for courses and menu items, shared 
 
 Improved code organization and readability by separating components, hooks, and helpers.
 
+YouTube Link : https://youtu.be/ijYFt9zoVsE?si=sasMa6HDxVN6Abx3
+Github link : https://github.com/SaneleDlamini77/MAST_POE/edit/main/README.md
+
 References
 
 React Native
